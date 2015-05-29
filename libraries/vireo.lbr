@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -213,6 +213,85 @@ Attribution-ShareAlike 4.0 International - &lt;a href="ttp://creativecommons.org
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="STM32L476R" prefix="U">
+<description>The STM32L476RG is an ultra-low-power ARM Cortex-M4 with 1MB of flash and 128KB SRAM.</description>
+<gates>
+<gate name="U1" symbol="STM32L476RX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="G" package="LQFP64">
+<connects>
+<connect gate="U1" pin="!NRST" pad="7"/>
+<connect gate="U1" pin="BOOT0" pad="60"/>
+<connect gate="U1" pin="PA0" pad="14"/>
+<connect gate="U1" pin="PA1" pad="15"/>
+<connect gate="U1" pin="PA10" pad="43"/>
+<connect gate="U1" pin="PA11" pad="44"/>
+<connect gate="U1" pin="PA12" pad="45"/>
+<connect gate="U1" pin="PA13" pad="46"/>
+<connect gate="U1" pin="PA14" pad="49"/>
+<connect gate="U1" pin="PA15" pad="50"/>
+<connect gate="U1" pin="PA2" pad="16"/>
+<connect gate="U1" pin="PA3" pad="17"/>
+<connect gate="U1" pin="PA4" pad="20"/>
+<connect gate="U1" pin="PA5" pad="21"/>
+<connect gate="U1" pin="PA6" pad="22"/>
+<connect gate="U1" pin="PA7" pad="23"/>
+<connect gate="U1" pin="PA8" pad="41"/>
+<connect gate="U1" pin="PA9" pad="42"/>
+<connect gate="U1" pin="PB0" pad="26"/>
+<connect gate="U1" pin="PB1" pad="27"/>
+<connect gate="U1" pin="PB10" pad="29"/>
+<connect gate="U1" pin="PB11" pad="30"/>
+<connect gate="U1" pin="PB12" pad="33"/>
+<connect gate="U1" pin="PB13" pad="34"/>
+<connect gate="U1" pin="PB14" pad="35"/>
+<connect gate="U1" pin="PB15" pad="36"/>
+<connect gate="U1" pin="PB2" pad="28"/>
+<connect gate="U1" pin="PB3" pad="55"/>
+<connect gate="U1" pin="PB4" pad="56"/>
+<connect gate="U1" pin="PB5" pad="57"/>
+<connect gate="U1" pin="PB6" pad="58"/>
+<connect gate="U1" pin="PB7" pad="59"/>
+<connect gate="U1" pin="PB8" pad="61"/>
+<connect gate="U1" pin="PB9" pad="62"/>
+<connect gate="U1" pin="PC0" pad="8"/>
+<connect gate="U1" pin="PC1" pad="9"/>
+<connect gate="U1" pin="PC10" pad="51"/>
+<connect gate="U1" pin="PC11" pad="52"/>
+<connect gate="U1" pin="PC12" pad="53"/>
+<connect gate="U1" pin="PC13" pad="2"/>
+<connect gate="U1" pin="PC14" pad="3"/>
+<connect gate="U1" pin="PC15" pad="4"/>
+<connect gate="U1" pin="PC2" pad="10"/>
+<connect gate="U1" pin="PC3" pad="11"/>
+<connect gate="U1" pin="PC4" pad="24"/>
+<connect gate="U1" pin="PC5" pad="25"/>
+<connect gate="U1" pin="PC6" pad="37"/>
+<connect gate="U1" pin="PC7" pad="38"/>
+<connect gate="U1" pin="PC8" pad="39"/>
+<connect gate="U1" pin="PC9" pad="40"/>
+<connect gate="U1" pin="PD2" pad="54"/>
+<connect gate="U1" pin="PH0" pad="5"/>
+<connect gate="U1" pin="PH1" pad="6"/>
+<connect gate="U1" pin="VBAT" pad="1"/>
+<connect gate="U1" pin="VDD1" pad="19"/>
+<connect gate="U1" pin="VDD2" pad="32"/>
+<connect gate="U1" pin="VDD3" pad="64"/>
+<connect gate="U1" pin="VDDA_VREF_P" pad="13"/>
+<connect gate="U1" pin="VDDUSB" pad="48"/>
+<connect gate="U1" pin="VSS1" pad="18"/>
+<connect gate="U1" pin="VSS2" pad="31"/>
+<connect gate="U1" pin="VSS3" pad="47"/>
+<connect gate="U1" pin="VSS4" pad="63"/>
+<connect gate="U1" pin="VSSA_VREF_N" pad="12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
