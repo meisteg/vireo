@@ -1,3 +1,7 @@
-*.b#*
-*.s#*
-*.l#*
+# Eagle backup files
+*.b#?
+*.s#?
+*.l#?
+
+# Eagle project file
+eagle.epf
